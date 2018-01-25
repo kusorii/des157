@@ -73,6 +73,12 @@ h3 {
   border: solid 1px black;
 }
 
+p {
+    font-size: 14px;
+    text-indent: 20px;
+    line-height: 20px;
+}
+
 ul {
   list-style-type: disc;
 }
@@ -119,6 +125,15 @@ a:active {
 .back {
   background-color: #ffffff;
   color: #7e6eec;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
 }
 /* End Body styles */
 /* Start Footer styles */
