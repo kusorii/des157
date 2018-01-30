@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1366">
+  <title>Mad Libs 2.0</title>
+  <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+  <header><h1>Beginning of a Journey</h1></header>
+
+  <article>
+      <form name="f">
+          <div>
+            <label for="yourName">Name:</label>
+            <input type="text" id="yourName" required>
+          </div>
+          <div>
+            <label for="yourPlace">Place:</label>
+            <input type="text" id="yourPlace" required>
+          </div>
+          <div>
+            <label for="yourRole">Role:</label>
+            <select id="yourRole" required>
+              <option value="">Select a Role</option>
+              <option value="warrior">Warrior</option>
+              <option value="cleric">Cleric</option>
+              <option value="sorcerer">Sorcerer</option>
+              <option value="tank">Tank</option>
+            </select>
+          </div>
+          <div>
+            <label for="adj1">Adjective:</label>
+            <input type="text" id="adj1" required>
+          </div>
+          <div>
+            <label for="adj2">Adjective:</label>
+            <input type="text" id="adj2" required>
+          </div>
+          <div>
+            <label for="noun">Noun:</label>
+            <input type="text" id="noun" required>
+          </div>
+          <div id="subres">
+            <input type="submit" value="Start your adventure" />
+            <input type="reset" value="Recustomize here" />
+          </div>
+      </form>
+    </article>
+    <section id="results" class="hide">
+      <p id="adventureMsg"></p>
+    </section>
+    <img src="images/flag.png" alt="flag" id="image" height="300" width="200" class="show">
+  </div>
+  <footer>
+      <a href="https://validator.w3.org/check?uri=referer">Valid HTML5</a>  |  <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+  </footer>
+    <script src="script.js"></script>
+</body>
+</html>

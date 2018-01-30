@@ -1,0 +1,80 @@
+/*stylesheet for mad libs page*/
+
+/* Start Structural Styles */
+.wrapper {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+/* End Structural Styles */
+
+/* Start Body Styles */
+body {
+  background-color: black;
+  color: white;
+  max-height: 766px;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  text-align: right;
+}
+
+article {
+  float: right;
+  text-align: right;
+}
+
+form {
+  padding-top: 30px;
+  line-height: 35px;
+}
+
+#subres{
+    padding-top: 10px;
+}
+
+section p{
+  float: left;
+  text-align: left;
+  width: 40%;
+  font-size: 18px;
+  text-indent: 25px;
+  margin-top: 60px;
+  line-height: 25px;
+}
+
+input[type="reset"], input[type="submit"]{
+  padding: 7px;
+  border: none;
+  border-radius: 2px;
+  background-color: antiquewhite;
+  color: #333;
+}
+
+/* End Body Styles */
+
+/* Start Footer Styles */
+
+footer {
+  position: fixed;
+  clear: both;
+  bottom: 0;
+  text-align: right;
+  width: 90%;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* End Footer Styles */
