@@ -12,7 +12,7 @@ body {
 /*add a background of cherry blossoms to the middleground */
 .wrapper {
     background-color: white;
-    background-image: url("images/bg2.jpg");
+    background-image: url("images/bg3.jpg");
     color: black;
     width: 90%;
     height: 100%;
@@ -116,6 +116,7 @@ a:hover {
 
   .wrapper {
       padding-bottom: 15%;
+      background-image: url("images/bg2.jpg");
   }
 
 
