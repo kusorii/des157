@@ -1,0 +1,99 @@
+.wrapper {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding-top: 3%;
+}
+
+/*animates the ring ring text 7 times in a row and positions it in the middle of the background picture */
+.ring {
+  position: absolute;
+  top: 100px;
+  left: 185px;
+  width: 226px;
+  height: 133px;
+  background: url('images/ringing.png') left center;
+  animation: play steps(4);
+  animation-duration: 2s;
+  animation-iteration-count: 7;
+}
+
+@keyframes play {
+    100% {background-position: -916px;}
+}
+
+/*positions every image and text within the gray box*/
+#box {
+  position: absolute;
+  top: 300px;
+  left: 25px;
+  border-radius: 20px;
+}
+
+#window {
+  width: 600px;
+  height: 450px;
+  position: relative;
+}
+
+#girl {
+ position: absolute;
+ top: 315px;
+ left: 45px;
+}
+
+/*opacity used to make the text fade in and out during animations*/
+#first {
+  position: absolute;
+  top: 310px;
+  left: 180px;
+  opacity: 0;
+  transition: 1s opacity;
+}
+
+#second {
+  position: absolute;
+  top: 350px;
+  left: 175px;
+  opacity: 0;
+  transition: 1s opacity;
+}
+
+#third {
+  position: absolute;
+  top: 310px;
+  left: 175px;
+  opacity: 0;
+  transition: 1s opacity;
+}
+
+#fourth {
+  position: absolute;
+  top: 350px;
+  left: 175px;
+  opacity: 0;
+  transition: 1s opacity;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 20px;
+}
+
+a:link, a:visited {
+  color: gray;
+  text-decoration: none;
+}
+
+a:hover {
+  color: pink;
+  text-decoration: underline;
+}
+
+footer {
+  position: absolute;
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
