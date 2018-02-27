@@ -19,10 +19,9 @@ header {
   padding-bottom: 20px;
 }
 
-h2 {
-  display: none;
+p {
+  margin-bottom: 25px;
 }
-
 
 ul li {
   list-style-type: none;
