@@ -1,7 +1,6 @@
 /* Start Structural styles */
 .wrapper {
-  max-width: 90%;
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 
@@ -40,12 +39,12 @@ h3 {
 }
 
 #studio {
+  position: relative;
   background-color: #FFFFFF;
   color: black;
   margin-top: 20px;
   margin-left: 70px;
   float:left;
-  clear:left;
   padding: 48px 100px;
   border-style: dashed;
   border-width: 2px;
@@ -54,12 +53,12 @@ h3 {
 }
 
 #project {
+  position: relative;
   background-color: #FFFFFF;
   color: black;
   margin-top: 20px;
   margin-right: 50px;
   float: right;
-  clear:right;
   padding: 48px 100px;
   border-style: dashed;
   border-width: 2px;
