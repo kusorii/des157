@@ -67,6 +67,11 @@ img {
   padding: 20px;
 }
 
+.mood {
+  margin-top: 50px;
+    display: inline;
+}
+
 #left {
   float: left;
 }
