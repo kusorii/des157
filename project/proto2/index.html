@@ -1,66 +1,75 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>Prototype 2</title>
-    <link href="https://cdn.jsdelivr.net/npm/normalize.css@7.0.0/normalize.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300i,400,400i" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-
+  <meta charset="utf-8">
+  <title>Prototype 2</title>
+  <link href="https://cdn.jsdelivr.net/npm/normalize.css@7.0.0/normalize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300i,400,400i" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
 </head>
+
 <body>
+  <article class="page" id="title">
+    <h1 class="hTitle">There's Always A<br>Better Day</h1>
+    <a href="#game" id="start">Start</a>
+    <nav>
+      <a href="#about" class="nav left"><img src="images/arrowLeft.png" alt="left arrow"></a>
+      <a href="#more" class="nav right"><img src="images/arrow.png" alt="right arrow"></a>
+    </nav>
+  </article>
+  <article class="page" id="about">
+    <h1>About</h1>
+    <h2>The Project</h2>
+    <p class="info">This project is a game about facing mental illneses such as depression and anxiety. It is an attempt to create more awareness to the issues that is becoming more common in teenagers and young adults as they face more responisibilities and forge new
+      relationships. The player will go through a story and make decisions based on what they think will be the best choice one should make given the circumstances that they are trying to make healthier choices in learning to cope with their illness.
+      For more information, there is a separate page on depression/anxiety.</p>
+    <h2>How to Play</h2>
+    <p class="info">Click on the mouse to switch through the text/story and follow along. There will be times to click on one out of two options to continue the story. Think wisely before picking, as you can’t go back after making your decision! **This game is not playable
+      on mobile devices at its current state, and is made for screens 1368 x 768 or larger**</p>
+    <nav>
+      <a href="#title" class="nav right"><img src="images/arrow.png" alt="right arrow"></a>
+    </nav>
+  </article>
+  <article class="page" id="more">
+    <h1>More Information</h1>
+    <h3>What is depression?</h3>
+    <p class="info">Depression is a mood disorder in which the affected individual may have felings such as hopelessness, sadness, dejectedness, or other negative feelings that greatly affect the way the person thinks, feels, and acts on a daily basis. It makes one feel
+      perhaps like a hindrance on others, that they aren’t loved or needed. It hinders their working habits, sleeping habits, and even eating habits.</p>
+    <h3>What are some treatments for depression?</h3>
+    <p class="info">Some treatments involve going to see a counselor or therapist in order to get their recomendations and help. Doctors can also prescribe medication (antidepresants) to treat the disorder, and these may take a few weeks to work, but they come with side
+      effects. Other treatments have been to channel the negative energy into creative means in order to put attention elsewhere rather than dwelve in bad feelings. Some individuals also join groups where they discuss their problems and have others there
+      who understand them and help them get through their problems.</p>
+    <h3>Want to add your own suggestions on how you or other people you know cope with depression? Type them below!</h3>
+    <textarea rows="5" cols="80"></textarea>
+    <button id="submit">Submit</button>
+    <nav>
+      <a href="#title" class="nav left"><img src="images/arrowLeft.png" alt="left arrow"></a>
+    </nav>
+  </article>
+  <article class="page" id="game">
+    <section id="window">
+      <img src="images/bg.png" alt="Gray background for game" width="1100" height="600" id="background">
+      <button type="button" id="next" onClick="changeText()">Next</button>
+      <nav id="gameHome"><a href="#title">Home</a><button id="fullScreen">Fullscreen</button>
+      </nav>
 
-      <article class="page" id="title">
-        <h1 class="hTitle">There's Always A<br>Better Day</h1>
-            <a href="#game" id="start">Start</a>
-            <nav>
-                  <a href="#about" class="nav left"><img src="images/arrowLeft.png" alt="left arrow"></a>
-                  <a href="#more" class="nav right"><img src="images/arrow.png" alt="right arrow"></a>
-            </nav>
-      </article>
-      <article class="page" id="about">
-        <h1>About</h1>
-        <h2>The Project</h2>
-          <p class="info">This project is a game about facing mental illneses such as depression and anxiety. It is an attempt to create more awareness to the issues that is becoming more common in teenagers and young adults as they face more responisibilities and forge new relationships. The player will go through a story and make decisions based on what they think will be the best choice one should make given the circumstances that they are trying to make healthier choices in learning to cope with their illness. For more information, there is a separate page on depression/anxiety.</p>
-        <h2>How to Play</h2>
-          <p class="info">Click on the mouse to switch through the text/story and follow along. There will be times to click on 1 out of 2 options to continue the story. Think wisely before picking, as you can’t go back after making your decision.</p>
-          <nav>
-                <a href="#title" class="nav right"><img src="images/arrow.png" alt="right arrow"></a>
-          </nav>
-      </article>
-      <article class="page" id="more">
-          <h1>More Information</h1>
-          <h3>What is depression?</h3>
-          <p class="info">Depression is a mood disorder in which the affected individual may have felings such as hopelessness, sadness, dejectedness, or other negative feelings that greatly affect the way the person thinks, feels, and acts on a daily basis. It makes one feel perhaps like a hindrance on others, that they aren’t loved or needed. It hinders their working habits, sleeping habits, and even eating habits.</p>
-          <h3>What are some treatments for depression?</h3>
-          <p class="info">Some treatments involve going to see a counselor or therapist in order to get their recomendations and help. Doctors can also prescribe medication (antidepresants) to treat the disorder, and these may take a few weeks to work, but they come with side effects. Other treatments have been to channel the negative energy into creative means in order to put attention elsewhere rather than dwelve in bad feelings. Some individuals also join groups where they discuss their problems and have others there who understand them and help them get through their problems.</p>
-          <h3>Want to add your own suggestions on how you or other people you know cope with depression? Type them below!</h3>
-          <textarea rows="5" cols="80"></textarea>
-          <button id="submit">Submit</button>
-          <nav>
-            <a href="#title" class="nav left"><img src="images/arrowLeft.png" alt="left arrow"></a>
-          </nav>
-      </article>
-      <article class="page" id="game">
+      <div id="text">
+        <div class="ring"></div>
+        <p>Ugh... What time is it? Only 7:30...? It's still so early. I don't have class until 9 today. Five <br> more minutes... Mom hasn't come in to get me up anyway.</p>
+      </div>
+    </section>
 
-          <img src="images/bg.png" alt="Gray background for game" width="1100" height="600" id="background">
-          <nav id="gameHome"><a href="#title">Home</a><button id="fullScreen">Fullscreen</button>
-          </nav>
-
-          <div id="text">
-            <p>Ugh... What time is it? Only 7:30...? It's still so early. I don't have class until 9 today. Five <br> more minutes... Mom hasn't come in to get me up anyway.</p>
-          </div>
-          <button type="button" id="next" onClick="changeText()">Next</button>
-          <!-- <section id="overlay">
+    <!-- <section id="overlay">
             <h2>How to Play</h2>
              <p>Click on the mouse to switch through the text/story and follow along. There will be times to click on 1 out of 2 options to continue the story. Think wisely before picking, as you can’t go back after making your decision.</p>
              <div id="close">&otimes;</div>
           </section> -->
-      </article>
+  </article>
 
-      <footer>
-           <a href="https://validator.w3.org/check?uri=referer" class="footer">Valid HTML5</a>//<a href="https://jigsaw.w3.org/css-validator/check/referer" class="footer">Valid CSS</a>
-      </footer>
-      <script src="script.js"></script>
+  <footer>
+    <a href="https://validator.w3.org/check?uri=referer" class="footer">Valid HTML5</a>//<a href="https://jigsaw.w3.org/css-validator/check/referer" class="footer">Valid CSS</a>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

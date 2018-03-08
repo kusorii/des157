@@ -19,8 +19,16 @@ h1 {
 }
 
 .hTitle {
-    text-align: right;
-    margin-right: 15%;
+  text-align: right;
+  margin-right: 15%;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
 }
 
 @keyframes scrollleft {
@@ -48,6 +56,24 @@ h1 {
   display: none;
 }
 
+.ring {
+  position: absolute;
+  top: -325px;
+  left: 230px;
+  width: 226px;
+  height: 133px;
+  background: url('images/ringing.png') left center;
+  animation: play steps(4);
+  animation-duration: 2s;
+  animation-iteration-count: 7;
+}
+
+@keyframes play {
+  100% {
+    background-position: -916px;
+  }
+}
+
 .info, h2, h3 {
   padding-left: 160px;
   padding-right: 160px;
@@ -61,8 +87,8 @@ textarea {
   position: relative;
   left: 160px;
   width: 75%;
-
 }
+
 nav {
   position: fixed;
   top: 45%;
@@ -84,7 +110,7 @@ li {
   left: 3%;
 }
 
-.right{
+.right {
   position: fixed;
   top: 50%;
   right: 3%;
@@ -118,7 +144,7 @@ a:active {
 #background {
   position: relative;
   top: 7%;
-  left: 10%;
+  left: 5%;
 }
 
 #title {
@@ -136,8 +162,14 @@ a:active {
 }
 
 #game {
-    background-color: #0d0d0d;
-    color: white;
+  background-color: #0d0d0d;
+  color: white;
+}
+
+#window {
+  position: absolute;
+  top: 100px;
+  left: 225px;
 }
 
 #start {
@@ -157,7 +189,7 @@ a:active {
 
 #text {
   position: absolute;
-  top: 500px;
+  top: 450px;
   left: 300px;
   color: black;
   font-size: 14pt;
@@ -166,8 +198,8 @@ a:active {
 
 #next {
   position: absolute;
-  top: 590px;
-  right: 180px;
+  top: 550px;
+  right: 20px;
   background-color: gray;
   color: black;
   border-radius: 10px;
@@ -180,13 +212,13 @@ a:active {
 }
 
 footer {
-   position: fixed;
-   left: 30px;
-   bottom: 0;
-   width: 90%;
-   font-size: 14px;
-   padding-top: 10px;
-   padding-bottom: 10px;
+  position: fixed;
+  left: 30px;
+  bottom: 0;
+  width: 90%;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .footer {
