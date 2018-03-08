@@ -56,9 +56,11 @@ h1 {
 .info {
   text-indent: 25px;
 }
+
 textarea {
-  position: absolute;
+  position: relative;
   left: 160px;
+  width: 75%;
 
 }
 nav {
@@ -77,9 +79,21 @@ li {
 }
 
 .left {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 3%;
+}
+
+.right{
+  position: fixed;
+  top: 50%;
+  right: 3%;
+}
+
+#gameHome {
+  position: fixed;
+  right: 2%;
+  top: 2%;
 }
 
 a {
@@ -101,20 +115,33 @@ a:active {
   color: #db6eec;
 }
 
+#background {
+  position: relative;
+  top: 7%;
+  left: 10%;
+}
+
 #title {
   display: block;
 }
 
 #about {
   background-color: #0d0d0d;
+  color: white;
 }
 
 #more {
   background-color: #0d0d0d;
+  color: white;
+}
+
+#game {
+    background-color: #0d0d0d;
+    color: white;
 }
 
 #start {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 45%;
   border: 2px solid white;
@@ -126,6 +153,30 @@ a:active {
   font-style: italic;
   font-weight: 300;
   font-size: 14pt;
+}
+
+#text {
+  position: absolute;
+  top: 500px;
+  left: 300px;
+  color: black;
+  font-size: 14pt;
+  line-height: 25pt;
+}
+
+#next {
+  position: absolute;
+  top: 590px;
+  right: 180px;
+  background-color: gray;
+  color: black;
+  border-radius: 10px;
+}
+
+#submit {
+  position: absolute;
+  top: 580px;
+  right: 180px;
 }
 
 footer {
