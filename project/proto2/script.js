@@ -17,6 +17,23 @@ console.log("reading");
 var text = document.getElementById("text");
 var article = document.querySelector("article");
 var click = 0;
+var aboutTip = document.getElementById('aboutTip');
+var left1 = document.getElementById('left1');
+var timerId;
+
+left1.addEventListener ('mouseover', function(){
+  timerId = setTimeout(showAboutTip, 1000);
+});
+
+left1.addEventListener('mouseout', function(){
+  clearTimeout(timerId);
+  aboutTip.style.opacity = 0;
+});
+
+function showAboutTip(){
+  aboutTip.style.opacity = 1;
+}
+
 
 
 // document.getElementById("text").addEventListener("click", changeText);

@@ -129,6 +129,9 @@ a:active {
   color: #db6eec;
 }
 
+#proto {
+  text-decoration: underline;
+}
 
 img {
   display: block;

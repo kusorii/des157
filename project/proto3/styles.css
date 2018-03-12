@@ -16,6 +16,7 @@ h1 {
   text-align: center;
   font-style: italic;
   font-weight: 300;
+  margin-bottom: 20px;
 }
 
 .hTitle {
@@ -58,8 +59,8 @@ h1 {
 
 .ring {
   position: absolute;
-  top: -325px;
-  left: 230px;
+  top: 160px;
+  left: 500px;
   width: 226px;
   height: 133px;
   background: url('images/ringing.png') left center;
@@ -74,19 +75,24 @@ h1 {
   }
 }
 
+h2, h3 {
+  margin-top: -10px;
+}
 .info, h2, h3 {
-  padding-left: 160px;
-  padding-right: 160px;
+  padding-left: 380px;
+  padding-right: 380px;
 }
 
 .info {
   text-indent: 25px;
+  line-height: 25px;
 }
 
 textarea {
   position: relative;
-  left: 160px;
-  width: 75%;
+  left: 380px;
+  width: 43%;
+  margin-bottom: 50px;
 }
 
 nav {
@@ -141,7 +147,7 @@ a:active {
   color: #db6eec;
 }
 
-#aboutTip {
+#aboutTip, #moreTip {
   opacity: 0;
   transition: all 1s;
   color: white;
@@ -176,7 +182,7 @@ a:active {
 #window {
   position: absolute;
   top: 100px;
-  left: 225px;
+  left: 80px;
 }
 
 #start {
@@ -197,7 +203,7 @@ a:active {
 #text {
   position: absolute;
   top: 450px;
-  left: 300px;
+  left: 250px;
   color: black;
   font-size: 14pt;
   line-height: 25pt;
@@ -205,17 +211,24 @@ a:active {
 
 #next {
   position: absolute;
-  top: 550px;
+  top: 540px;
   right: 20px;
   background-color: gray;
   color: black;
   border-radius: 10px;
 }
 
+#btn, #btn2 {
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 15px;
+
+}
+
 #submit {
   position: absolute;
-  top: 580px;
-  right: 180px;
+  top: 725px;
+  left: 908px;
 }
 
 footer {
