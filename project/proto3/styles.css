@@ -69,6 +69,32 @@ h1 {
   animation-iteration-count: 7;
 }
 
+.leftImg {
+  display: inline;
+  position: absolute;
+  top: 100px;
+  left: 150px;
+}
+
+#clock, #door, #wakeup, #wash, #toast, #zzz {
+  opacity: 0;
+  transition: 2s opacity;
+}
+
+.rightImg {
+  display: inline;
+  position: absolute;
+  top: 100px;
+  right: 50px;
+}
+
+.oneImg {
+  position: absolute;
+  display: inline;
+  top: 100px;
+  left: 375px;
+}
+
 @keyframes play {
   100% {
     background-position: -916px;
@@ -218,7 +244,7 @@ a:active {
   border-radius: 10px;
 }
 
-#btn, #btn2 {
+#btn, #btn2, #btn3, #btn4 {
   border-radius: 10px;
   padding: 5px;
   margin-bottom: 15px;
