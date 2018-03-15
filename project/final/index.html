@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Prototype 3</title>
+  <title>DES157 Final Project</title>
   <link href="https://cdn.jsdelivr.net/npm/normalize.css@7.0.0/normalize.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300i,400,400i" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
@@ -19,20 +19,20 @@
     </nav>
   </article>
   <article class="page" id="about">
-    <h1>About</h1>
+    <h1 class="h1">About</h1>
     <h2>The Project</h2>
     <p class="info">This project is a game about facing depression. It is an attempt to create more awareness to the issues that is becoming more common in teenagers and young adults as they face more responsibilities and forge new relationships. The player will go through
       a story and make decisions based on what they think will be the best choice one should make given the circumstances that they are trying to make healthier choices in learning to cope with their illness. For more information, there is a separate
       page on depression.</p>
     <h2>How to Play</h2>
-    <p class="info">Click on the mouse to switch through the text/story and follow along. There will be times to click on one out of two options to continue the story. Think wisely before picking, as you can’t go back after making your decision!</p>
-    <p class="info">**DISCLAIMER** This game is not playable on mobile devices at its current state, and is best for screens at size 1366 x 768 or larger.</p>
+    <p class="info">Click on the mouse to switch through the text/story and follow along. There will be times to click on one out of two options to continue the story. Think wisely before picking, as you can’t go back after making your decision! To restart the game, refresh the browser.</p>
+    <p class="info">**DISCLAIMER** This game is not playable on mobile devices at its current state, and is best for screens at size 1366 x 768.</p>
     <nav>
-      <a href="#title" class="nav right"><img src="images/arrow.png" alt="right arrow"></a>
+      <a href="#title" class="nav right"><img src="images/arrow.png" alt="right arrow"><div class="titleTip">Back</div></a>
     </nav>
   </article>
   <article class="page" id="more">
-    <h1>More Information</h1>
+    <h1 class="h1">More Information</h1>
     <h3>What is depression?</h3>
     <p class="info">Depression is a mood disorder in which the affected individual may have feelings such as hopelessness, sadness, dejectedness, or other negative feelings that greatly affect the way the person thinks, feels, and acts on a daily basis. It makes one
       feel perhaps like a hindrance on others, that they aren’t loved or needed. It hinders their working habits, sleeping habits, and even eating habits.</p>
@@ -40,11 +40,11 @@
     <p class="info">Some treatments involve going to see a counselor or therapist in order to get their recommendations and help. Doctors can also prescribe medication (antidepressants) to treat the disorder, and these may take a few weeks to work, but they come with
       side effects. Other treatments have been to channel the negative energy into creative means in order to put attention elsewhere rather than dwelve in bad feelings. Some individuals also join groups where they discuss their problems and have others
       there who understand them and help them get through their problems.</p>
-    <h3>Want to add your own suggestions on how you or other people you know cope with depression? Type them below!</h3>
-    <textarea rows="5" cols="80">(You can type here, but this area is under construction and you cannot submit anything after typing! Ideally, the suggestion would be sent to my Email and I filter it before adding it to a list that will be posted on this site.)</textarea>
-    <button id="submit">Submit</button>
+    <h3>Want to add your own suggestions on how to cope with depression? Type them below!</h3>
+    <textarea rows="2" cols="80"></textarea>
+    <div class="wrapper"><button id="submit">Submit</button></div>
     <nav>
-      <a href="#title" class="nav left"><img src="images/arrowLeft.png" alt="left arrow"></a>
+      <a href="#title" class="nav left"><img src="images/arrowLeft.png" alt="left arrow"><div class="titleTip">Back</div></a>
     </nav>
   </article>
   <article class="page" id="game">
@@ -60,8 +60,10 @@
       <img src="images/wakeup.png" class="oneImg hide" alt="Image of exclamation points and ellipses." width="490" height="275" id="wakeup">
 
       <img src="images/wash.png" class="leftImg hide" alt="Image of a toothbrush and toothpaste." id="wash">
-      <img src="images/toast.png" class="rightImg hide" alt="Image of a piece of toast with a sunny-side up." id="toast">
+      <img src="images/toast.png" class="midImg hide" alt="Image of a piece of toast with a sunny-side up." id="toast">
       <img src="images/zzz.png" class="leftImg hide" alt="Image of the letters 'z z z'." id="zzz">
+      <img src="images/clothes.png" class="rightImg hide" alt="Image of a shirt and pants." id="clothes">
+      <img src="images/drive.png" class="oneImg hide" alt="Image of an English notebook and looking out a car window." id="drive">
 
       <div id="text">
         <p>Ugh... What time is it? Only 7:30AM...? It's still so early. I don't have class until 9 today. <br>Five more minutes... Mom hasn't come in to get me up anyway.</p>

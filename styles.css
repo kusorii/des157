@@ -1,7 +1,14 @@
 /* Start Structural styles */
+
 .wrapper {
   width: 80%;
   margin: auto;
+}
+
+.wrapperAud {
+  width: 50%;
+  margin: auto;
+  line-height: 35px;
 }
 
 body {
@@ -44,7 +51,7 @@ h3 {
   color: black;
   margin-top: 20px;
   margin-left: 70px;
-  float:left;
+  float: left;
   padding: 48px 100px;
   border-style: dashed;
   border-width: 2px;
@@ -68,19 +75,28 @@ h3 {
 }
 
 #mySketch {
-  background-color:#ffffff;  /*repeated background color throughout css due to color error in validator */
+  background-color: #ffffff;
+  /*repeated background color throughout css due to color error in validator */
   color: black;
   border: solid 1px black;
 }
 
 #res {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 p {
-    font-size: 14px;
-    text-indent: 20px;
-    line-height: 20px;
+  font-size: 14px;
+  text-indent: 20px;
+  line-height: 20px;
+}
+
+p:last-child {
+    margin-bottom: 50px;
+}
+
+.audience {
+  font-size: 16px;
 }
 
 ul {
@@ -94,19 +110,20 @@ ul {
 li {
   line-height: 24px;
 }
+
 ul li {
   padding-bottom: 5px;
 }
 
 ul li ul {
-    list-style-type: none;
-    padding-bottom: 5px;
+  list-style-type: none;
+  padding-bottom: 5px;
 }
 
 ul li ul li {
-    margin-left: 25px;
-    list-style-type: circle;
-    padding-bottom: 5px;
+  margin-left: 25px;
+  list-style-type: circle;
+  padding-bottom: 5px;
 }
 
 ol {
@@ -130,7 +147,7 @@ a:active {
 }
 
 #proto {
-  text-decoration: underline;
+  color: blue;
 }
 
 img {
@@ -139,18 +156,31 @@ img {
   margin-right: auto;
   padding: 20px;
 }
+
 /* End Body styles */
+
 /* Start Footer styles */
 
 footer {
-   position: fixed;
-   clear: both;
-   bottom: 0;
-   text-align: right;
-   width: 80%;
-   font-size: 14px;
-   padding-top: 10px;
-   padding-bottom: 10px;
+  position: fixed;
+  clear: both;
+  bottom: 0;
+  text-align: right;
+  width: 80%;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#aud {
+  position: fixed;
+  clear: both;
+  bottom: 0;
+  text-align: right;
+  width: 50%;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* End Footer styles */

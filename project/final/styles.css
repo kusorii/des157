@@ -1,0 +1,300 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: black;
+  color: #EEEEEE;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.hTitle {
+  text-align: right;
+  margin-right: 15%;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes scrollleft {
+  from {
+    left: 100px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+.page:target {
+  position: absolute;
+  display: block;
+  animation-name: scrollleft;
+  animation-duration: 0.5s;
+}
+
+.page {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 110%;
+  width: 100%;
+  display: none;
+}
+
+.ring {
+  position: absolute;
+  top: 160px;
+  left: 500px;
+  width: 226px;
+  height: 133px;
+  background: url('images/ringing.png') left center;
+  animation: play steps(4);
+  animation-duration: 2s;
+  animation-iteration-count: 7;
+}
+
+.leftImg {
+  display: inline;
+  position: absolute;
+  top: 100px;
+  left: 150px;
+}
+
+.midImg {
+  display: inline;
+  position: absolute;
+  top: 100px;
+  left: 450px;
+}
+
+.rightImg {
+  display: inline;
+  position: absolute;
+  top: 100px;
+  right: 50px;
+}
+
+.oneImg {
+  position: absolute;
+  display: inline;
+  top: 100px;
+  left: 375px;
+}
+
+#clock, #door, #wakeup, #wash, #toast, #zzz, #clothes, #drive {
+  opacity: 0;
+  transition: 2s opacity;
+}
+
+@keyframes play {
+  100% {
+    background-position: -916px;
+  }
+}
+
+h2, h3 {
+  margin-top: 0px;
+  color: #e8dba9;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.info, h2, h3, .h1 {
+  position: relative;
+  left: 35%;
+  word-wrap: break-word;
+  width: 510px;
+}
+
+.info {
+  text-indent: 25px;
+  line-height: 25px;
+}
+
+textarea {
+  position: relative;
+  left: 35%;
+  width: 500px;
+  margin-bottom: 50px;
+}
+
+nav {
+  position: fixed;
+  top: 45%;
+  right: 5%;
+  z-index: 1;
+}
+
+li {
+  list-style-type: none;
+}
+
+.wrapper {
+  margin: auto;
+}
+
+.nav {
+  display: inline-block;
+}
+
+.left {
+  position: fixed;
+  top: 50%;
+  left: 3%;
+}
+
+.right {
+  position: fixed;
+  top: 50%;
+  right: 3%;
+}
+
+#gameHome {
+  position: fixed;
+  right: 2%;
+  top: 2%;
+}
+
+a {
+  padding: 10px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  color: #7e6eec;
+}
+
+a:active {
+  color: #db6eec;
+}
+
+
+#aboutTip, #moreTip, .titleTip {
+  opacity: 1;
+  padding-top: 15px;
+  text-align: center;
+}
+
+#background {
+  position: relative;
+  top: 7%;
+  left: 5%;
+}
+
+#title {
+  display: block;
+}
+
+#about, #more, #game {
+  background-color: #0d0d0d;
+  color: #EEEEEE;
+}
+
+#window {
+  position: absolute;
+  top: 100px;
+  left: 80px;
+}
+
+#start {
+  position: fixed;
+  top: 50%;
+  left: 45%;
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  background-color: black;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14pt;
+}
+
+#fullScreen {
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  background-color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#text {
+  position: absolute;
+  top: 450px;
+  left: 250px;
+  color: black;
+  font-size: 14pt;
+  line-height: 25pt;
+}
+
+#next {
+  position: absolute;
+  top: 540px;
+  right: 20px;
+  background-color: gray;
+  color: black;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+#btn, #btn2, #btn3, #btn4 {
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+#submit {
+  margin-top: -40px;
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  background-color: black;
+  padding: 5px 30px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 12pt;
+  position: absolute;
+  left: 50%;
+}
+
+footer {
+  position: fixed;
+  left: 30px;
+  bottom: 0;
+  width: 90%;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer {
+  color: white;
+  padding: 5px;
+  margin: 0 3px;
+}
