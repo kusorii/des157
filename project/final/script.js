@@ -8,9 +8,15 @@ var ring = document.getElementById("ring");
 var article = document.querySelector("article");
 var click = 0;
 var timerId;
+var acc = document.getElementsByClassName("accordion");
+var i;
 
 window.onload = function() {
   window.setTimeout(fadein1, 3000); //3 seconds
+}
+
+function clickAlert() {
+  alert("This section is currently under development and no data can be submitted, but thank you for trying!");
 }
 
 function fadein1() {
@@ -43,6 +49,19 @@ function fadein7() {
 
 function fadein8() {
   drive.style.opacity = '1';
+}
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
 }
 
 //On every click, the text changes for the game, and an increment of 1 is added to the click variable to move the text forward

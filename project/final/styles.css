@@ -108,13 +108,15 @@ h1 {
   }
 }
 
-h2, h3 {
+h2 {
   margin-top: 0px;
   color: #e8dba9;
 }
 
 h3 {
   font-size: 20px;
+  color: #e8dba9;
+  margin-top: 25px;
 }
 
 .info, h2, h3, .h1 {
@@ -122,6 +124,15 @@ h3 {
   left: 35%;
   word-wrap: break-word;
   width: 510px;
+}
+
+.info2 {
+  position: relative;
+  left: 35%;
+  word-wrap: break-word;
+  width: 510px;
+  text-indent: 25px;
+  line-height: 25px;
 }
 
 .info {
@@ -165,6 +176,33 @@ li {
   position: fixed;
   top: 50%;
   right: 3%;
+}
+
+.accordion {
+    color: #e8dba9;
+    background-color: Transparent;
+    cursor: pointer;
+    padding: 18px;
+    width: 38%;
+    text-align: left;
+    border: solid #e8dba9 1pt;
+    border-radius: 10px;
+    outline: none;
+    /* transition: 0.4s; */
+    display: block;
+    margin: 10px;
+    position: relative;
+    left: 460px;
+}
+
+.active, .accordion:hover {
+    background-color: #2d2d2d;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
 }
 
 #gameHome {
